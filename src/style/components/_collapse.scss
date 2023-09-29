@@ -1,0 +1,73 @@
+@import "../settings.scss";
+
+.collapse {
+    margin: 30px 208px;
+
+    @include phone {
+      margin: 20px;
+    }
+  
+    .collapse_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $primary-color;
+      padding: 12px 20px;
+      border-radius: 5px;
+      position: relative;
+      z-index: 2;
+
+      .collapse-arrow {
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.rotate {
+          transition: transform 0.2s ease-in-out;
+          transform: rotate(-180deg);
+        }
+  
+        &.reverse {
+          transition: transform 0.2s ease-in-out;
+          transform: rotate(0deg);
+        }
+      
+        img {
+          @include phone {
+            width: 16px;
+          }
+        }
+      }
+  
+      h2 {
+        color: white;
+        font-weight: 500;
+        font-size: 24px;
+
+        @include phone{
+          font-size: 13px;
+        }
+      }
+  
+      button {
+        background: none;
+        border: none;
+      }
+    }
+
+    .toggle {
+        padding: 20px;
+        background-color: $secondary-color;
+        border-radius: 5px;
+
+        p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+  }
+
+  .housing-collapse {
+    width: 100%;
+    margin: 0px;
+  }

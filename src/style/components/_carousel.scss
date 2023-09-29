@@ -1,0 +1,63 @@
+@import "../settings.scss";
+
+.carousel {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include phone {
+        margin-bottom: 15px;
+    }
+
+    .carousel-image {
+        width: 100%;
+        height: 415px;
+        object-fit: cover;
+
+        @include phone {
+            width: 335px;
+            height: 255px;
+        }
+    }
+
+    .count {
+        margin-top: 345px;
+        z-index: 1;
+        color: white;
+        position: absolute;
+
+        @include phone {
+            display: none;
+        }
+    }
+
+    .arrows {
+        width: 80%;
+        max-width: 1240px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+    
+        .arrow-left {
+            width: 47px;
+            margin-left: 24px;
+
+            @include phone {
+                width: 12px;
+                margin-left: 0px
+            }
+        }
+
+        .arrow-right {
+            width: 47px;
+            margin-right: 24px;
+            margin-left: auto;
+
+            @include phone {
+                width: 12px;
+                margin-right: 0px;
+            }
+        }
+    }
+}

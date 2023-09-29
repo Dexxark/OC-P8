@@ -1,0 +1,70 @@
+@import "../settings.scss";
+
+.cardList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 43px 100px 0px 100px;
+    padding: 56px 50px 43px 50px;
+    gap: 60px;
+    background-color: $secondary-color;
+    border-radius: 25px;
+    justify-content: space-evenly;
+
+    @include phone {
+        margin: 22px 20px 27px 20px;
+        padding: 0px;
+        gap: 20px;
+        background-color: white;
+    }
+
+    .card {
+        width: 340px;
+        height: 340px;
+        display: flex;
+        text-decoration: none;
+
+        @include phone {
+            width: 335px;
+            height: 255px;
+        }
+
+        img {
+            width: 340px;
+            height: 340px;
+            border-radius: 10px;
+
+            @include phone {
+                width: 335px;
+                height: 255px;
+            }
+        }
+
+        p {
+            width: 57%;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 268px;
+            margin-left: -320px;
+            z-index: 2;
+
+            @include phone {
+                margin-top: 190px;
+            }
+        }
+
+        .overlay {
+            width: 340px;
+            height: 340px;
+            background: linear-gradient(white, black 100%);
+            position: absolute;
+            opacity: 30%;
+            z-index: 1;
+
+            @include phone {
+                width: 335px;
+                height: 255px;
+            }
+        }
+    }
+}

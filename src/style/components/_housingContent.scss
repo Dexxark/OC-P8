@@ -1,0 +1,69 @@
+@import "../settings.scss";
+
+.housing {
+    margin: 0px 100px;
+
+    @include phone {
+        margin: 0px 20px;
+    }
+
+    .housing-content {
+        display: flex;
+        justify-content: space-between;
+
+        @include phone {
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 500;
+    
+            @include phone {
+                font-size: 18px;
+            }
+        }
+    
+        p {
+            font-size: 18px;
+    
+            @include phone {
+                font-size: 14px;
+            }
+        }
+    
+        .tags {
+            margin-top: 20px;
+    
+            @include phone {
+                margin-top: 10px;
+            }
+        }
+
+        .content-two {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @include phone {
+                margin-top: 16px;
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+        }
+    }
+
+    .collapses {
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+        gap: 76px;
+
+        @include phone {
+            margin-top: 13px;
+            margin-bottom: 19px;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

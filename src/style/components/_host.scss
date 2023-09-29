@@ -1,0 +1,23 @@
+.host {
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    p {
+        width: 62%;
+        margin-right: 10px;
+        line-height: 26px;
+        font-size: 18px;
+        font-weight: 500;
+
+        @include phone {
+            width: 50%;
+        }
+    }
+
+    img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+}

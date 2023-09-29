@@ -1,0 +1,69 @@
+@import "../settings.scss";
+
+.banner {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0px 100px;
+    justify-content: center;
+
+    @include phone {
+        margin: 0px 20px;
+    }
+
+    img {
+        width: 100%;
+        height: 223px;
+        object-fit: cover;
+        border-radius: 25px;
+
+        @include phone {
+            height: 111px;
+        }
+    }
+
+    p {
+        position: absolute;
+        color: white;
+        font-size: 48px;
+        z-index: 2;
+
+        @include tablet {
+            font-size: 36px;
+        }
+
+        @include phone {
+            width: 215px;
+            margin-right: 80px;
+            display: flex;
+            text-align: left;
+            font-size: 24px;
+        }
+    }
+
+    .overlay {
+        width: 100%;
+        height: 223px;
+        background-color: black;
+        position: absolute;
+        opacity: 30%;
+        z-index: 1;
+        border-radius: 25px;
+        max-width: 1240px;
+
+        @include phone {
+            margin: 0px;
+            width: 0%;
+            height: 111px;
+            padding-right: 335px;
+        }
+    }
+}
+
+.about {
+    margin-bottom: 38px;
+
+    @include phone {
+        margin-bottom: 20px;
+    }
+}

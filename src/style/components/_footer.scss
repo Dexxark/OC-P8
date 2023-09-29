@@ -1,0 +1,27 @@
+.footer {
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 66px 0px 29px 0px;
+    margin-top: 50px;
+
+    @include phone {
+      margin-top: 0px;
+      padding-bottom: 58px;
+    }
+
+    p {
+      font-weight: 300;
+      margin-top: 30px;
+      color: white;
+
+      @include phone {
+        width: 45%;
+        margin-top: 10px;
+        display: flex;
+        text-align: center;
+      }
+    }
+  }

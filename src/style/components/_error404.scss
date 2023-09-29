@@ -1,0 +1,42 @@
+.error404 {
+    margin: 0px 184px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include phone {
+        margin: 113px 20px;
+    }
+
+    h1 {
+        margin: 70px 0px;
+        font-size: 288px;
+
+        @include phone {
+            margin-top: 0px;
+            margin-bottom: 113px;
+            font-size: 96px;
+        }
+    }
+
+    p {
+        font-size: 36px;
+        font-weight: 500;
+
+        @include phone {
+            display: flex;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+
+    .return {
+        margin: 139px 0px 89px 0px;
+        font-size: 18px;
+
+        @include phone {
+            margin: 113px 0px 0px 0px;
+        }
+    }
+}
