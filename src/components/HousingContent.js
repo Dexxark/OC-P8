@@ -1,7 +1,6 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate  } from 'react-router-dom';
 import data from '../logements.json';
-import Error404 from '../components/Error404';
 import Carousel from '../components/Carousel';
 import Tag from './Tag';
 import Host from '../components/Host';
@@ -13,12 +12,12 @@ const HousingContent = () => {
   const housingData = data.find((el) => el.id === id);
 
   if (!housingData) {
-    return <Error404 />;
+    return <Navigate to="/Page404" />;
   }
 
   return (
     <div className="housing">
-       <Carousel housingData={housingData}/>
+      <Carousel housingData={housingData}/>
 
       <div className="housing-content">
         <div className="content-one">
