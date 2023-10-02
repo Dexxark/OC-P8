@@ -1,5 +1,4 @@
 import React from 'react';
-import "../style/components/_rating.scss";
 
 const Rating = ({ rating }) => {
   const stars = [];

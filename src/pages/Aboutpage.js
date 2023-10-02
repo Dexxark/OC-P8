@@ -27,7 +27,7 @@ const Aboutpage = () => {
             <BannerAbout/>
             <div>
                 {aboutData.map((data, index) => (
-                    <Collapse key={index} title={data.title} content={data.content} isColumn={false} />
+                    <Collapse key={index} title={data.title} content={data.content}/>
                 ))}
             </div>
             <Footer/>

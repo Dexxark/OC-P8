@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import data from '../logements.json';
 import Error404 from '../components/Error404';
 import Carousel from '../components/Carousel';
-import Tags from '../components/Tags';
+import Tag from './Tag';
 import Host from '../components/Host';
 import Rating from '../components/Rating';
 import Collapse from '../components/Collapse';
@@ -26,7 +26,7 @@ const HousingContent = () => {
           <p>{housingData.location}</p>
           <div className="tags">
             {housingData.tags.map((tag, index) => (
-              <Tags key={index} content={tag}/>
+              <Tag key={index} content={tag}/>
             ))}
           </div>
         </div>

@@ -7,15 +7,13 @@
       margin: 20px;
     }
   
-    .collapse_header {
+    .collapse-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       background-color: $primary-color;
       padding: 12px 20px;
       border-radius: 5px;
-      position: relative;
-      z-index: 2;
 
       .collapse-arrow {
         &:hover {
@@ -56,11 +54,32 @@
     }
 
     .toggle {
-        padding: 20px;
+        max-height: 0;
+        transition: max-height 0.4s ease-in;
         background-color: $secondary-color;
         border-radius: 5px;
+        overflow: hidden;
 
-        p {
+        &.open {
+          max-height: 500px;
+        }
+    
+        &.close {
+          max-height: 0;
+          transition: max-height 0.4s ease-out;
+        }
+
+        .equipments {
+          padding: 20px;
+
+          .equipment {
+            font-size: 18px;
+            line-height: 26px;
+          }
+        }
+
+        .content {
+            padding: 20px;
             font-size: 18px;
             line-height: 26px;
         }

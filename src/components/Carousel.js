@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import "../style/components/_carousel.scss";
 
 const Carousel = ({ housingData }) => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -16,7 +15,9 @@ const Carousel = ({ housingData }) => {
 
   if (housingData.pictures.length === 1) {
     return (
-        <img src={currentImage} alt={housingData.title} className="carousel" />
+      <div className="carousel">
+        <img src={currentImage} alt={housingData.title} className="carousel-image" />
+      </div>
     );
   }
 

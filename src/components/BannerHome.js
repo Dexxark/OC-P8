@@ -1,5 +1,4 @@
 import React from 'react';
-import "../style/components/_banner.scss";
 
 const BannerHome = () => {
     return (
